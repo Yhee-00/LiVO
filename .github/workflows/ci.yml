@@ -29,7 +29,11 @@ jobs:
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root
       SPRING_JPA_HIBERNATE_DDL_AUTO: create
-
+      FILE_UPLOAD_DIR: /tmp/uploads
+      SPRING_AI_OPENAI_API_KEY: test-openai-key
+      SPRING_AI_OPENAI_EMBEDDING_OPTIONS_MODEL: text-embedding-3-small
+      TOSS_SECRET_KEY: test-toss-secret-key
+      
     steps:
       - uses: actions/checkout@v4
 
